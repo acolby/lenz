@@ -1,0 +1,22 @@
+{
+  "name": "lenz",
+  "version": "0.0.1",
+  "description": "Data attribute overlay tool for React Applications",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "React",
+    "Overlay"
+  ],
+  "author": "acolby",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "react": "^19.1.0"
+  }
+}

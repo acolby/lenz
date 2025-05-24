@@ -1,0 +1,32 @@
+### Node ###
+*.log
+npm-debug.log*
+.eslintcache
+node_modules
+
+.npm
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+**/.certs/
+**/.builds/
+**/.containers/
+**/.temp/
+**/.admin/
+
+# dotenv environment variables file
+.env.prod
+.env.test
+.env.local
+.env.dev
