@@ -12,7 +12,7 @@ import { Breadcrumbs } from "./components/Breadcrumbs";
 
 import { KeyBinding } from "./components/KeyBinding";
 
-type Props = {
+export type Props = {
   Comp?: React.ComponentType<{
     item: Item;
   }>;

@@ -1,21 +1,26 @@
 {
   "name": "@acolby/lenz",
-  "version": "0.0.3",
-  "description": "Data attribute overlay tool for React Applications",
-  "main": "src/index.tsx",
-  "types": "src/index.tsx",
+  "version": "0.0.5",
+  "description": "Data attribute overlay tool forReact Applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
-      "import": "./src/index.tsx"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "files": [
-    "src"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/acolby/lenz.git"
+  },
+  "scripts": {
+    "build": "tsx ./scripts/build.js && tsc -p tsconfig.json",
+    "prepublishOnly": "rm -rf dist && tsc"
   },
   "keywords": [
     "React",
@@ -23,15 +28,15 @@
   ],
   "author": "acolby",
   "license": "MIT",
-  "scripts": {
-    "test": "test"
-  },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.6",
+    "esbuild": "^0.25.5",
     "react": "^19.1.0",
+    "tsc": "^2.0.4",
+    "tsx": "^4.19.4",
     "typescript": "^5.4.0"
   }
 }
