@@ -2,12 +2,12 @@
   "name": "@acolby/lenz",
   "version": "0.0.3",
   "description": "Data attribute overlay tool for React Applications",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./src/index.ts"
+      "import": "./src/index.tsx"
     }
   },
   "files": [
